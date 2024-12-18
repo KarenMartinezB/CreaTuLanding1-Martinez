@@ -7,19 +7,40 @@ import "../styles/Home.css";
 function Home() {
   const [bestSellers, setBestSellers] = useState([]);
   const [allBooks, setAllBooks] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const fetchBooks = async () => {
-      const booksCollection = collection(db, "books");
+      try {
+        console.log("Fetching books...");
+        const booksCollection = collection(db, "books");
 
-      // Fetch Best Sellers
-      const bestSellersQuery = query(booksCollection, where("isBestSeller", "==", true));
-      const bestSellersSnapshot = await getDocs(bestSellersQuery);
-      setBestSellers(bestSellersSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        // Obtener todos los libros
+        const allBooksSnapshot = await getDocs(booksCollection);
+        const allBooksData = allBooksSnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("All Books Data:", allBooksData); 
+        setAllBooks(allBooksData);
 
-      // Fetch All Books
-      const allBooksSnapshot = await getDocs(booksCollection);
-      setAllBooks(allBooksSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        // Obtener Best Sellers
+        const bestSellersQuery = query(booksCollection, where("isBestSeller", "==", true));
+        const bestSellersSnapshot = await getDocs(bestSellersQuery);
+        const bestSellersData = bestSellersSnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("Best Sellers Data:", bestSellersData); 
+        setBestSellers(bestSellersData);
+
+        setLoading(false);
+      } catch (err) {
+        console.error("Error fetching books:", err);
+        setError("Failed to load books. Please try again later.");
+        setLoading(false);
+      }
     };
 
     fetchBooks();
@@ -27,31 +48,35 @@ function Home() {
 
   return (
     <div className="container mt-4">
-      <h1>Best Sellers</h1>
-      <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          {bestSellers.map((book, index) => (
-            <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={book.id}>
-              <img src={book.image} className="d-block w-100" alt={book.title} />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>{book.title}</h5>
-                <p>{book.synopsis}</p>
-              </div>
+      {loading ? (
+        <p className="loading-text">Loading...</p>
+      ) : error ? (
+        <p className="error-message">{error}</p>
+      ) : (
+        <>
+          <h1>Best Sellers</h1>
+          <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              {bestSellers.map((book, index) => (
+                <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={book.id}>
+                  <img src={book.image} className="d-block w-100" alt={book.title} />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>{book.title}</h5>
+                    <p>{book.synopsis}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+          </div>
 
-      <h1 className="mt-5">All Books</h1>
-      <ItemList items={allBooks} />
+          <h1 className="mt-5">All Books</h1>
+          {allBooks.length > 0 ? (
+            <ItemList items={allBooks} />
+          ) : (
+            <p>No books available. Please check Firestore data.</p>
+          )}
+        </>
+      )}
     </div>
   );
 }

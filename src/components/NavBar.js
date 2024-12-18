@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="container">
         <Link className="logo" to="/">
-          📚 Book Store
+          CookiBoki 📚 Book Store
         </Link>
         <div className="menu">
           <Link to="/category/best-sellers">Best Sellers</Link>
