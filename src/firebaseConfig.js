@@ -10,6 +10,7 @@ import imagePlantaNaranja from "./images/planta naranja.jpg";
 import imageMiNombre from "./images/mi-nombre-es-emilia-del-valle.jpg";
 import imageFearless from "./images/fearless.jpg";
 import imageULugar from "./images/unlugarsoleado.jpeg";
+
 const firebaseConfig = {
   apiKey: "AIzaSyALn-f61ifag-QsNhK9TWIAClsUPNzh6gM",
   authDomain: "reactjs-karenmartinez.firebaseapp.com",
