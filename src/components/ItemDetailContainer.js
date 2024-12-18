@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import { useParams } from "react-router-dom";
 
 function ItemDetailContainer() {
   const { id } = useParams();
@@ -15,28 +15,26 @@ function ItemDetailContainer() {
         setBook(bookSnap.data());
       }
     };
+
     fetchBook();
   }, [id]);
 
-  return (
+  return book ? (
     <div className="container mt-4">
-      {book ? (
-        <div className="row">
-          <div className="col-md-6">
-            <img src={book.image} alt={book.title} className="img-fluid" />
-          </div>
-          <div className="col-md-6">
-            <h2>{book.title}</h2>
-            <p>{book.synopsis}</p>
-            <p>Author: {book.author}</p>
-            <p>Price: ${book.price}</p>
-            <p>Reviews: {book.reviews}</p>
-          </div>
+      <div className="row">
+        <div className="col-md-6">
+          <img src={book.image} alt={book.title} className="img-fluid" />
         </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+        <div className="col-md-6">
+          <h2>{book.title}</h2>
+          <p>{book.synopsis}</p>
+          <p>Price: ${book.price}</p>
+          <p>Reviews: {book.reviews}</p>
+        </div>
+      </div>
     </div>
+  ) : (
+    <p>Loading...</p>
   );
 }
 

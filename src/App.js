@@ -2,9 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-import ItemDetailContainer from "./components/ItemDetailContainer";
 import Category from "./components/Category";
-import "./App.css";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 function App() {
   return (

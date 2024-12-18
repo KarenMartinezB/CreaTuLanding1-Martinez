@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {
   return (
@@ -10,16 +9,16 @@ function NavBar() {
           Book Store
         </Link>
         <div>
-          <Link className="nav-link" to="/category/best-sellers">
+          <Link className="nav-link d-inline" to="/category/best-sellers">
             Best Sellers
           </Link>
-          <Link className="nav-link" to="/category/fiction">
+          <Link className="nav-link d-inline" to="/category/fiction">
             Fiction
           </Link>
-          <Link className="nav-link" to="/category/non-fiction">
+          <Link className="nav-link d-inline" to="/category/non-fiction">
             Non-fiction
           </Link>
-          <Link className="nav-link" to="/category/children">
+          <Link className="nav-link d-inline" to="/category/children">
             Children
           </Link>
         </div>
