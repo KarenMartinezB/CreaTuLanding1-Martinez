@@ -105,7 +105,206 @@ const books = [
     reviews: 4.9,
     isBestSeller: true
   },
-    
+  {
+    title: "Un lugar soleado para gente sombría",
+    author: "Mariana Enriquez",
+    price: 14.500,
+    category: "fiction",
+    image: "",
+    synopsis: "Un lugar soleado para gente sombría, de Mariana Enriquez, combina realismo y elementos oscuros para explorar historias de personajes marginales atrapados entre el miedo y el deseo. Con su estilo visceral, Enriquez ofrece una reflexión inquietante sobre la naturaleza humana, los vínculos rotos y los lugares donde habita la oscuridad.",
+    reviews: 4.8,
+    isBestSeller: true
+  },
+  {
+    title: "El celo",
+    author: "Nuria Barrios",
+    price: 12.000,
+    category: "fiction",
+    image: "",
+    synopsis: "El celo, de Nuria Barrios, es una poderosa novela que explora los celos, la culpa y la obsesión en una relación amorosa. A través de una prosa íntima y descarnada, Barrios retrata las emociones más intensas y destructivas que surgen cuando el amor se transforma en inseguridad y desconfianza.",
+    reviews: 4.5,
+    isBestSeller: false
+  },
+  {
+    title: "La llamada",
+    author: "Pablo Ramos",
+    price: 13.200,
+    category: "fiction",
+    image: "",
+    synopsis: "La llamada, de Pablo Ramos, narra un tenso y emotivo diálogo entre un padre y su hijo, en el que emergen las heridas familiares, la culpa y el amor. Con una narrativa íntima, la novela aborda las complejidades de las relaciones humanas y la lucha por la redención personal.",
+    reviews: 4.6,
+    isBestSeller: false
+  },
+  {
+    title: "Cómo causar un incendio y por qué",
+    author: "Jessie Ann Foley",
+    price: 14.000,
+    category: "fiction",
+    image: "",
+    synopsis: "Cómo causar un incendio y por qué, de Jessie Ann Foley, sigue a un adolescente rebelde que enfrenta el duelo y la ira tras una tragedia familiar. A través de su búsqueda de identidad, la novela aborda temas como la pérdida, el crecimiento y la fuerza de las emociones desbordadas.",
+    reviews: 4.7,
+    isBestSeller: true
+  },
+  {
+    title: "En agosto nos vemos",
+    author: "Gabriel García Márquez",
+    price: 15.000,
+    category: "fiction",
+    image: "",
+    synopsis: "En agosto nos vemos, de Gabriel García Márquez, narra la historia de Ana Magdalena, quien cada año visita la tumba de su madre en una isla caribeña. Allí, vive encuentros inesperados que entrelazan amor, memoria y deseo, explorando con la prosa mágica de Márquez la fragilidad de las emociones humanas.",
+    reviews: 4.8,
+    isBestSeller: true
+  },
+  {
+    "title": "Los guardianes de la memoria",
+    "author": "Clara Ford",
+    "price": 15.000,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "Los guardianes de la memoria narra la historia de un grupo que preserva recuerdos olvidados en un mundo donde la memoria colectiva se desvanece. Mezcla de ciencia ficción y realismo, explora el poder de los recuerdos y la identidad.",
+    "reviews": 4.7,
+    "isBestSeller": false
+  },
+  {
+    "title": "El último eclipse",
+    "author": "Julian Harper",
+    "price": 16.500,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "El último eclipse es una novela postapocalíptica donde una familia lucha por sobrevivir tras un desastre global. Con giros sorprendentes, aborda el sacrificio y la esperanza en tiempos oscuros.",
+    "reviews": 4.8,
+    "isBestSeller": true
+  },
+  {
+    "title": "Hijas de lo salvaje",
+    "author": "Leona Grace",
+    "price": 14.000,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "Hijas de lo salvaje cuenta la historia de una comunidad aislada donde las mujeres descubren secretos ancestrales que redefinirán su futuro. Una novela sobre el poder femenino y la conexión con la naturaleza.",
+    "reviews": 4.6,
+    "isBestSeller": true
+  },
+  {
+    "title": "Las sombras que enterramos",
+    "author": "Oliver Banks",
+    "price": 13.800,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "Las sombras que enterramos sigue a un periodista que investiga un caso de desaparición en un pequeño pueblo, desentrañando oscuros secretos que lo cambiarán para siempre. Un thriller psicológico lleno de misterio.",
+    "reviews": 4.5,
+    "isBestSeller": false
+  },
+  {
+    "title": "Las cartas olvidadas",
+    "author": "Amelia Rowe",
+    "price": 14.500,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "Las cartas olvidadas narra la historia de una joven que encuentra correspondencia antigua en su nuevo hogar, desentrañando una historia de amor y traición que cruza generaciones.",
+    "reviews": 4.9,
+    "isBestSeller": true
+  },
+  {
+    "title": "Al borde del mundo",
+    "author": "Maxine Clarke",
+    "price": 15.200,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "Al borde del mundo sigue a un explorador que descubre una civilización oculta en un rincón olvidado del planeta. Una novela que mezcla aventura, descubrimiento y dilemas morales.",
+    "reviews": 4.6,
+    "isBestSeller": true
+  },
+  {
+    "title": "La verdad entre líneas",
+    "author": "Sofia Mendoza",
+    "price": 14.300,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "La verdad entre líneas narra la historia de un escritor que, tras recibir cartas anónimas, descubre secretos sobre su pasado que lo llevan a cuestionar su realidad.",
+    "reviews": 4.7,
+    "isBestSeller": true
+  },
+  {
+    "title": "El pacto de los espejos",
+    "author": "Ricardo Larios",
+    "price": 13.900,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "El pacto de los espejos es un thriller sobrenatural que sigue a un detective mientras investiga un caso donde los reflejos parecen cobrar vida, revelando verdades ocultas.",
+    "reviews": 4.6,
+    "isBestSeller": false
+  },
+  {
+    "title": "La casa del bosque",
+    "author": "Elena Fernández",
+    "price": 14.800,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "La casa del bosque narra la historia de una familia que se muda a una casa antigua donde los secretos del pasado comienzan a desentrañarse, transformando sus vidas para siempre.",
+    "reviews": 4.8,
+    "isBestSeller": true
+  },
+  {
+    "title": "La isla de las sombras",
+    "author": "Lucas García",
+    "price": 14.600,
+    "category": "fiction",
+    "image": "",
+    "synopsis": "La isla de las sombras sigue a un grupo de arqueólogos que descubre un misterioso asentamiento, enfrentándose a los secretos oscuros que yacen enterrados en sus ruinas.",
+    "reviews": 4.5,
+    "isBestSeller": false
+  },
+  {
+    "title": "Bajo el mismo cielo",
+    "author": "Clara Rodríguez",
+    "price": 13.500,
+    "category": "romance",
+    "image": "",
+    "synopsis": "Bajo el mismo cielo cuenta la historia de dos desconocidos que se cruzan en un aeropuerto durante una tormenta. Lo que comienza como un encuentro casual se transforma en un romance inolvidable.",
+    "reviews": 4.6,
+    "isBestSeller": true
+  },
+  {
+    "title": "Amor a la deriva",
+    "author": "Lucas Alvarado",
+    "price": 14.200,
+    "category": "romance",
+    "image": "",
+    "synopsis": "Amor a la deriva sigue a dos náufragos que deben apoyarse mutuamente para sobrevivir en una isla desierta, mientras descubren un amor tan salvaje como inesperado.",
+    "reviews": 4.7,
+    "isBestSeller": false
+  },
+  {
+    "title": "Cartas desde París",
+    "author": "Isabella Ruiz",
+    "price": 15.000,
+    "category": "romance",
+    "image": "",
+    "synopsis": "Cartas desde París narra la relación epistolar entre una joven escritora y un misterioso desconocido que le envía cartas desde la ciudad del amor, llevando sus vidas a un giro inesperado.",
+    "reviews": 4.8,
+    "isBestSeller": true
+  },
+  {
+    "title": "El jardín de los secretos",
+    "author": "María López",
+    "price": 14.500,
+    "category": "romance",
+    "image": "",
+    "synopsis": "El jardín de los secretos cuenta la historia de una restauradora de arte que, al trabajar en una mansión abandonada, encuentra pistas sobre un romance perdido y termina viviendo su propia historia de amor.",
+    "reviews": 4.7,
+    "isBestSeller": false
+  },
+  {
+    "title": "Hasta el último suspiro",
+    "author": "Daniela Ferrer",
+    "price": 13.800,
+    "category": "romance",
+    "image": "",
+    "synopsis": "Hasta el último suspiro relata el amor de dos almas gemelas que, tras años de separación, vuelven a encontrarse y deben decidir si su pasión es suficiente para superar los retos del destino.",
+    "reviews": 4.9,
+    "isBestSeller": true
+  }
 ];
 
 const addBooksToFirestore = async () => {
