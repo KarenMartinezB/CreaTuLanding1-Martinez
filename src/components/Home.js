@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import ItemList from "./ItemList";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/Home.css";
 
 function Home() {
   const [bestSellers, setBestSellers] = useState([]);
@@ -12,12 +12,12 @@ function Home() {
     const fetchBooks = async () => {
       const booksCollection = collection(db, "books");
 
-      // Best Sellers
+      // Fetch Best Sellers
       const bestSellersQuery = query(booksCollection, where("isBestSeller", "==", true));
       const bestSellersSnapshot = await getDocs(bestSellersQuery);
       setBestSellers(bestSellersSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
 
-      // All Books
+      // Fetch All Books
       const allBooksSnapshot = await getDocs(booksCollection);
       setAllBooks(allBooksSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
     };

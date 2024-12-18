@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Category from "./components/Category";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import { CartProvider } from "./context/CartContext";
+import "./App.css"
 
 function App() {
   return (
