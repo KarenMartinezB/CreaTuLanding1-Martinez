@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "price": 20000,
+      "category": "fiction",
+      "image": "/images/cien-anos-de-soledad.jpg",
+      "synopsis": "La historia de los Buendía en Macondo, un pueblo mágico marcado por amores, tragedias y soledad. Atrapados en un destino cíclico, sus generaciones experimentan eventos extraordinarios hasta cumplir la profecía de su inevitable desaparición.",
+      "reviews": 4.8,
+      "isBestSeller": true
+    },
+    {
+      "id": 2,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 14500,
+      "category": "classic",
+      "image": "/images/PrideandPrejudice.jpg",
+      "synopsis": "Elizabeth Bennet y el enigmático Sr. Darcy atraviesan malentendidos sociales, orgullo y prejuicios en la Inglaterra del siglo XIX. Una crítica a las normas sociales y al amor verdadero.",
+      "reviews": 4.8,
+      "isBestSeller": true
+    },
+    {
+      "id": 3,
+      "title": "Lolita",
+      "author": "Vladimir Nabokov",
+      "price": 16000,
+      "category": "classic",
+      "image": "/images/Lolita.jpg",
+      "synopsis": "La historia de Humbert Humbert y su peligrosa obsesión con Lolita, una joven adolescente. Una narración poética que explora la moralidad, el deseo y las complejidades humanas.",
+      "reviews": 4.7,
+      "isBestSeller": true
+    },
+    {
+      "id": 4,
+      "title": "Fearless",
+      "author": "Eric Blehm",
+      "price": 15500,
+      "category": "biography",
+      "image": "/images/fearless.jpg",
+      "synopsis": "La inspiradora historia de Adam Brown, un Navy SEAL cuya vida refleja el coraje, la superación y el sacrificio en medio de la adversidad personal y profesional.",
+      "reviews": 4.9,
+      "isBestSeller": true
+    },
+    {
+      "id": 5,
+      "title": "El segundo sexo",
+      "author": "Simone de Beauvoir",
+      "price": 18000,
+      "category": "philosophy",
+      "image": "/images/elsegundosexo.jpg",
+      "synopsis": "Un análisis profundo de la opresión histórica de las mujeres, desafiando las normas patriarcales y reivindicando la libertad y autonomía femenina en la sociedad moderna.",
+      "reviews": 4.9,
+      "isBestSeller": true
+    },
+    {
+      "id": 6,
+      "title": "Alguien camina sobre tu tumba",
+      "author": "Mariana Enriquez",
+      "price": 12500,
+      "category": "non-fiction",
+      "image": "/images/alguiencamina.jpg",
+      "synopsis": "Una colección fascinante de crónicas sobre cementerios alrededor del mundo, donde Enriquez reflexiona sobre la muerte, lo sobrenatural y el arte funerario.",
+      "reviews": 4.6,
+      "isBestSeller": false
+    },
+    {
+      "id": 7,
+      "title": "Los nombres de Feliza",
+      "author": "Margarita García Robayo",
+      "price": 13000,
+      "category": "fiction",
+      "image": "/images/losnombresde.jpg",
+      "synopsis": "Una exploración íntima de una familia y sus secretos, donde se cuestiona la identidad, las relaciones y las raíces culturales en un contexto personal.",
+      "reviews": 4.5,
+      "isBestSeller": false
+    },
+    {
+      "id": 8,
+      "title": "Mi planta de naranja lima",
+      "author": "José Mauro de Vasconcelos",
+      "price": 11000,
+      "category": "fiction",
+      "image": "/images/planta-naranja.jpg",
+      "synopsis": "La tierna historia de Zezé, un niño brasileño que encuentra consuelo y amistad en una planta de naranja lima en medio de la pobreza y adversidad.",
+      "reviews": 4.8,
+      "isBestSeller": true
+    },
+    {
+      "id": 9,
+      "title": "Mi nombre es Emilia del Valle",
+      "author": "Isabel Allende",
+      "price": 14000,
+      "category": "fiction",
+      "image": "/images/mi-nombre-es-emilia-del-valle.jpg",
+      "synopsis": "Una novela introspectiva donde Emilia busca sentido a su vida, explorando temas de memoria, identidad y la soledad en el mundo moderno.",
+      "reviews": 4.6,
+      "isBestSeller": false
+    },
+    {
+      "id": 10,
+      "title": "Un lugar soleado para gente sombría",
+      "author": "Mariana Enriquez",
+      "price": 14500,
+      "category": "fiction",
+      "image": "/images/unlugarsoleado.jpg",
+      "synopsis": "Historias de personajes oscuros atrapados entre el miedo y el deseo, explorando los límites de la humanidad en escenarios inquietantes.",
+      "reviews": 4.8,
+      "isBestSeller": true
+    }
+  ]
+  
