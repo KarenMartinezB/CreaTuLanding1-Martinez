@@ -9,22 +9,18 @@ function Category() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    const fetchCategory = async () => {
+    const fetchCategoryBooks = async () => {
       const q = query(collection(db, "books"), where("category", "==", id));
       const querySnapshot = await getDocs(q);
-      const booksData = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setBooks(booksData);
+      setBooks(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
     };
 
-    fetchCategory();
+    fetchCategoryBooks();
   }, [id]);
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4">{id} Books</h1>
+      <h1>{id} Books</h1>
       <ItemList items={books} />
     </div>
   );

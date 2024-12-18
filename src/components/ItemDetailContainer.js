@@ -20,17 +20,13 @@ function ItemDetailContainer() {
   }, [id]);
 
   return book ? (
-    <div className="container mt-4">
-      <div className="row">
-        <div className="col-md-6">
-          <img src={book.image} alt={book.title} className="img-fluid" />
-        </div>
-        <div className="col-md-6">
-          <h2>{book.title}</h2>
-          <p>{book.synopsis}</p>
-          <p>Price: ${book.price}</p>
-          <p>Reviews: {book.reviews}</p>
-        </div>
+    <div className="detail-container">
+      <img src={book.image} alt={book.title} />
+      <div className="details">
+        <h2>{book.title}</h2>
+        <p>{book.synopsis}</p>
+        <p>Price: ${book.price}</p>
+        <p>Reviews: ⭐ {book.reviews}</p>
       </div>
     </div>
   ) : (
