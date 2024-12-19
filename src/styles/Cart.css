@@ -1,0 +1,23 @@
+.cart-container {
+    padding: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  .clear-cart {
+    background-color: red;
+    color: white;
+    padding: 10px;
+  }
+  
